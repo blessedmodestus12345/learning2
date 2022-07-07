@@ -1,0 +1,253 @@
+body {
+  background: #000;
+  color: #fff;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+  -webkit-perspective-origin: 50% calc(50% - 150px);
+          perspective-origin: 50% calc(50% - 150px);
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation: rotate 15s infinite linear;
+          animation: rotate 15s infinite linear;
+}
+
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+  }
+}
+
+@keyframes rotate {
+  to {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+  }
+}
+
+.panel {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%) rotateY(var(--angle)) translateZ(220px);
+          transform: translate(-50%, -50%) rotateY(var(--angle)) translateZ(220px);
+  width: 50px;
+  height: 130px;
+  overflow: hidden;
+}
+
+.panel::before {
+  content: "WELCOME TO CI-HUB WEB DEV CLASS!!";
+  font-size: 64px;
+  position: absolute;
+  left: var(--left);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: hsl(var(--hue), 75%, 75%);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.panel:nth-child(1) {
+  --left: 0px;
+  --hue: 0;
+  --angle: 0deg;
+}
+
+.panel:nth-child(2) {
+  --left: -50px;
+  --hue: 12;
+  --angle: 12deg;
+}
+
+.panel:nth-child(3) {
+  --left: -100px;
+  --hue: 24;
+  --angle: 24deg;
+}
+
+.panel:nth-child(4) {
+  --left: -150px;
+  --hue: 36;
+  --angle: 36deg;
+}
+
+.panel:nth-child(5) {
+  --left: -200px;
+  --hue: 48;
+  --angle: 48deg;
+}
+
+.panel:nth-child(6) {
+  --left: -250px;
+  --hue: 60;
+  --angle: 60deg;
+}
+
+.panel:nth-child(7) {
+  --left: -300px;
+  --hue: 72;
+  --angle: 72deg;
+}
+
+.panel:nth-child(8) {
+  --left: -350px;
+  --hue: 84;
+  --angle: 84deg;
+}
+
+.panel:nth-child(9) {
+  --left: -400px;
+  --hue: 96;
+  --angle: 96deg;
+}
+
+.panel:nth-child(10) {
+  --left: -450px;
+  --hue: 108;
+  --angle: 108deg;
+}
+
+.panel:nth-child(11) {
+  --left: -500px;
+  --hue: 120;
+  --angle: 120deg;
+}
+
+.panel:nth-child(12) {
+  --left: -550px;
+  --hue: 132;
+  --angle: 132deg;
+}
+
+.panel:nth-child(13) {
+  --left: -600px;
+  --hue: 144;
+  --angle: 144deg;
+}
+
+.panel:nth-child(14) {
+  --left: -650px;
+  --hue: 156;
+  --angle: 156deg;
+}
+
+.panel:nth-child(15) {
+  --left: -700px;
+  --hue: 168;
+  --angle: 168deg;
+}
+
+.panel:nth-child(16) {
+  --left: -750px;
+  --hue: 180;
+  --angle: 180deg;
+}
+
+.panel:nth-child(17) {
+  --left: -800px;
+  --hue: 192;
+  --angle: 192deg;
+}
+
+.panel:nth-child(18) {
+  --left: -850px;
+  --hue: 204;
+  --angle: 204deg;
+}
+
+.panel:nth-child(19) {
+  --left: -900px;
+  --hue: 216;
+  --angle: 216deg;
+}
+
+.panel:nth-child(20) {
+  --left: -950px;
+  --hue: 228;
+  --angle: 228deg;
+}
+
+.panel:nth-child(21) {
+  --left: -1000px;
+  --hue: 240;
+  --angle: 240deg;
+}
+
+.panel:nth-child(22) {
+  --left: -1050px;
+  --hue: 252;
+  --angle: 252deg;
+}
+
+.panel:nth-child(23) {
+  --left: -1100px;
+  --hue: 264;
+  --angle: 264deg;
+}
+
+.panel:nth-child(24) {
+  --left: -1150px;
+  --hue: 276;
+  --angle: 276deg;
+}
+
+.panel:nth-child(25) {
+  --left: -1200px;
+  --hue: 288;
+  --angle: 288deg;
+}
+
+.panel:nth-child(26) {
+  --left: -1250px;
+  --hue: 300;
+  --angle: 300deg;
+}
+
+.panel:nth-child(27) {
+  --left: -1300px;
+  --hue: 312;
+  --angle: 312deg;
+}
+
+.panel:nth-child(28) {
+  --left: -1350px;
+  --hue: 324;
+  --angle: 324deg;
+}
+
+.panel:nth-child(29) {
+  --left: -1400px;
+  --hue: 336;
+  --angle: 336deg;
+}
+
+.panel:nth-child(30) {
+  --left: -1450px;
+  --hue: 348;
+  --angle: 348deg;
+}
+
+.scene {
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.screen {
+  position: absolute;
+  width: 400px;
+  height: 100px;
+  background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.564), rgba(0, 0, 0, 0.564), rgba(0, 0, 0, 0.564));
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=style.css.map */
